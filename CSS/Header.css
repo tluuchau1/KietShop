@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather&display=swap");
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   max-width: 2560px;
+}
+
+#navbar {
+   font-family: "Merriweather", serif;
+   position: sticky;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 60px;
+   z-index: 999;
+   background-color: black;
+   width: 100%;
+   padding: 0 15px;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+}
+
+.logo img {
+   max-width: 60px;
+   height: 40px;
+}
+
+.logo-span {
+   font-size: 20px;
+   padding: 0 5px;
+   background: linear-gradient(to right, red, orange, #2980b9, #3498db, #8e44ad, #e74c3c, #e84393);
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   background-clip: text;
+   color: transparent;
+   animation-delay: 0.2s;
+}
+
+ul.main-menu {
+   display: flex;
+   list-style: none;
+}
+
+ul.main-menu li {
+   position: relative;
+}
+
+ul.main-menu li:nth-child(1) {
+   animation-delay: 0.4s;
+}
+
+ul.main-menu li:nth-child(2) {
+   animation-delay: 0.6s;
+}
+
+ul.main-menu li:nth-child(3) {
+   animation-delay: 0.8s;
+}
+
+ul.main-menu li:nth-child(4) {
+   animation-delay: 1s;
+}
+
+ul.main-menu li:nth-child(5) {
+   animation-delay: 1.2s;
+}
+
+ul.main-menu li a {
+   position: relative;
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   text-decoration: none;
+   color: #fff;
+   padding: 15px;
+   z-index: 10;
+   font-size: 20px;
+}
+
+ul.main-menu li a i {
+   transition: 0.5s ease-in-out;
+}
+
+ul.sub-menu {
+   position: absolute;
+   background-color: black;
+   list-style: none;
+   width: max-content;
+   z-index: 9;
+   transform: translateY(-50%);
+   transition: 0.5s ease;
+   visibility: hidden;
+   opacity: 0;
+}
+
+ul.sub-menu li {
+   position: relative;
+   border-bottom: 2px solid red;
+}
+
+ul.sub-menu li a {
+   display: block;
+   padding: 10px 20px;
+   font-size: 16px;
+}
+
+ul.sub-menu ul.sub-menu {
+   top: 0;
+   left: 100%;
+   position: absolute;
+   transform: translateX(-50%);
+}
+
+ul.main-menu li:hover > ul.sub-menu {
+   visibility: visible;
+   opacity: 1;
+   transform: translateY(0);
+}
+
+ul.main-menu li a:hover {
+   background-color: white;
+   color: black;
+}
+
+ul.main-menu li:hover > a i {
+   transform: rotate(-180deg);
+}
+
+ul.sub-menu li:hover > ul.sub-menu {
+   visibility: visible;
+   opacity: 1;
+   transform: translateX(0);
+}
+
+.nav-right {
+   display: flex;
+   align-items: center;
+}
+
+.search {
+   position: relative;
+   margin-right: 20px;
+   animation-delay: 1.4s;
+}
+
+.search > i,
+.avatar i,
+.cart i {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   font-size: 24px;
+   border-radius: 50%;
+   background-color: #fff;
+   color: black;
+   cursor: pointer;
+   z-index: 10;
+}
+
+.search-form {
+   position: absolute;
+   right: 0;
+   visibility: hidden;
+   opacity: 0;
+   transform: translateY(50%);
+   transition: 0.25s ease;
+}
+
+.form {
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+
+.search-input {
+   outline: none;
+   padding: 5px 5px 5px 30px;
+   font-size: 16px;
+   border-radius: 30px;
+   background-color: #fff;
+   right: 0;
+}
+
+.search-input:focus {
+   border-color: #3498db;
+}
+
+.search-btn {
+   position: absolute;
+   left: 5px;
+   background: none;
+   border: none;
+   cursor: pointer;
+}
+
+.search-btn i {
+   font-size: 18px;
+   color: black;
+}
+
+.search:hover > .search-form {
+   visibility: visible;
+   opacity: 1;
+   transform: translateY(0);
+}
+
+.search::after,
+.avatar::after {
+   content: "";
+   position: absolute;
+   display: block;
+   border-right: 1px solid white;
+   height: 100%;
+   top: 0;
+   right: -10px;
+}
+
+.avatar {
+   position: relative;
+   margin-right: 20px;
+   animation-delay: 1.6s;
+}
+
+.avatar-log {
+   position: absolute;
+   visibility: hidden;
+   opacity: 0;
+   left: calc(-50% - 20px);
+   transform: translateY(50%);
+   transition: 0.5s ease;
+   width: max-content;
+   text-align: center;
+}
+
+.user-log {
+   background-color: black;
+}
+
+.user-log a {
+   display: block;
+   text-decoration: none;
+   color: white;
+   padding: 8px 15px;
+   font-size: 16px;
+}
+
+.avatar:hover > .avatar-log {
+   visibility: visible;
+   opacity: 1;
+   transform: translateY(0);
+}
+
+.user-log a:hover {
+   background-color: white;
+   color: black;
+}
+
+.cart {
+   position: relative;
+   margin-right: 10px;
+   animation-delay: 1.8s;
+}
+
+.cart-number {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   top: -10px;
+   right: -10px;
+   font-size: 10px;
+   width: 25px;
+   height: 25px;
+   color: black;
+   font-weight: 600;
+   border: 1px solid black;
+   border-radius: 50%;
+   background-color: white;
+   z-index: 11;
+}
+
+.logo img,
+.logo-span,
+ul.main-menu li,
+.search,
+.avatar,
+.cart {
+   animation-name: move;
+   animation-duration: 0.4s;
+   animation-timing-function: linear;
+   animation-fill-mode: forwards;
+   opacity: 0;
+}
+
+@keyframes move {
+   from {
+      opacity: 0;
+      transform: translateX(-30px);
+   }
+   to {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
