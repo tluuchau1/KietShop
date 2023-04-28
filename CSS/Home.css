@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .wrapper {
+    max-width: 100%;
+    position: relative;
+  }
+  .wrapper i {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    background: rgba(7, 7, 7, 0.7);
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+  }
+  .wrapper i:first-child {
+    left: 0;
+  }
+  .wrapper i:last-child {
+    right: 0;
+  }
+  
+  .wrapper .carousel {
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  .carousel img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .carousel.dragging {
+    cursor: grab;
+    scroll-behavior: smooth;
+  }
+  
+  .carousel.dragging img {
+    pointer-events: none;
+  }
