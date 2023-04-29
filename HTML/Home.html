@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/Home.css">
+    <link rel="stylesheet" href="/CSS/Grid.css">
     <script src="https://kit.fontawesome.com/cdb547b0ce.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <script src="../JS/Slider.js" defer></script>
@@ -12,7 +13,7 @@
 <body>
     
     <div class="wrapper">
-    <i id="left" class="fa-solid fa-angle-left"></i>
+    
         <div class="carousel">
             <img src="../IMAGE/slider1.jpg" alt="slider" draggable="false">
             <img src="../IMAGE/slider2.jpg" alt="slider" draggable="false">
@@ -20,7 +21,41 @@
             <img src="../IMAGE/slider4.jpg" alt="slider" draggable="false">
             <img src="../IMAGE/slider5.jpg" alt="slider" draggable="false">
         </div>
-    <i id="right" class="fa-solid fa-angle-right"></i>
+
+    <div class="btn">  
+    <i id="left" class="fa-solid fa-angle-left next"></i>
+    <i id="right" class="fa-solid fa-angle-right prev"></i>
+    </div>  
+
+    <div class="dotsContainer">
+        <div class="dot active" attr="0" onclick="switchImage(this)"></div>
+        <div class="dot" attr="1" onclick="switchImage(this)"></div>
+        <div class="dot" attr="2" onclick="switchImage(this)"></div>
+        <div class="dot" attr="3" onclick="switchImage(this)"></div>
+        <div class="dot" attr="4" onclick="switchImage(this)"></div>
     </div>
+    </div>
+
+    <div class="home-banner row 1-12">
+        <div class="ban col l-6">
+        <a href="##">
+            <div class="image"><img src="../IMAGE/banner1.jpg" alt="ban1"></div>
+            <div class="title-btn">
+                <div class="btn-shopnow">MIX & MATCH</div>
+                <div class="title">Shop Now</div>
+            </div>
+        </a>
+        </div>
+        <div class="ban col l-6">
+            <a href="##">
+            <div class="image"><img src="../IMAGE/banner2.jpg" alt="ban1"></div>
+            <div class="title-btn">
+                <div class="btn-shopnow">MIX & MATCH</div>
+                <div class="title">Shop Now</div>
+            </div>
+            </a>
+        </div>
+    </div>
+
 </body>
 </html>
