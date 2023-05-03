@@ -1,99 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather&display=swap");
 
-* {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-}
-
 body {
    max-width: 2560px;
 }
 
-#navbar {
+.nav {
    font-family: "Merriweather", serif;
    position: sticky;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: center;
-   height: 60px;
+   height: 8rem;
    z-index: 999;
    background-color: black;
-   width: 100%;
-   padding: 0 15px;
+   width: 100vw;
 }
 
-.logo {
+.nav__link {
    display: flex;
    align-items: center;
-   text-decoration: none;
 }
 
-.logo img {
-   max-width: 60px;
-   height: 40px;
+.nav__img {
+   max-width: 40px;
 }
 
-.logo-span {
-   font-size: 20px;
-   padding: 0 5px;
+.nav__title {
+   font-size: 2rem;
    background: linear-gradient(to right, red, orange, #2980b9, #3498db, #8e44ad, #e74c3c, #e84393);
    -webkit-background-clip: text;
-   -moz-background-clip: text;
    background-clip: text;
    color: transparent;
    animation-delay: 0.2s;
 }
 
-ul.main-menu {
+.nav__main-menu {
    display: flex;
-   list-style: none;
+   align-items: center;
 }
 
-ul.main-menu li {
+.main-menu__item {
    position: relative;
 }
 
-ul.main-menu li:nth-child(1) {
-   animation-delay: 0.4s;
-}
-
-ul.main-menu li:nth-child(2) {
-   animation-delay: 0.6s;
-}
-
-ul.main-menu li:nth-child(3) {
-   animation-delay: 0.8s;
-}
-
-ul.main-menu li:nth-child(4) {
-   animation-delay: 1s;
-}
-
-ul.main-menu li:nth-child(5) {
-   animation-delay: 1.2s;
-}
-
-ul.main-menu li a {
+.main-menu__link {
    position: relative;
    display: flex;
    align-items: center;
    gap: 5px;
-   text-decoration: none;
    color: #fff;
-   padding: 15px;
+   padding: 1rem 1.5rem;
    z-index: 10;
-   font-size: 20px;
+   font-size: 2rem;
 }
 
-ul.main-menu li a i {
+.main-menu__link i,
+.sub-menu__link i {
    transition: 0.5s ease-in-out;
 }
 
-ul.sub-menu {
+.nav__sub-menu {
    position: absolute;
    background-color: black;
-   list-style: none;
    width: max-content;
    z-index: 9;
    transform: translateY(-50%);
@@ -102,44 +70,86 @@ ul.sub-menu {
    opacity: 0;
 }
 
-ul.sub-menu li {
+.sub-menu__item {
    position: relative;
-   border-bottom: 2px solid red;
+   border-bottom: 1px solid red;
 }
 
-ul.sub-menu li a {
-   display: block;
-   padding: 10px 20px;
-   font-size: 16px;
+.sub-menu__link {
+   position: relative;
+   display: flex;
+   padding: 1rem 2rem;
+   font-size: 1.6rem;
+   justify-content: space-between;
+   color: white;
+   z-index: 9;
 }
 
-ul.sub-menu ul.sub-menu {
+.sub-menu--primary {
    top: 0;
    left: 100%;
    position: absolute;
    transform: translateX(-50%);
+   z-index: 8;
 }
 
-ul.main-menu li:hover > ul.sub-menu {
+.main-menu__item:hover > .nav__sub-menu {
    visibility: visible;
    opacity: 1;
    transform: translateY(0);
 }
 
-ul.main-menu li a:hover {
+.main-menu__link:hover,
+.sub-menu__link:hover {
    background-color: white;
    color: black;
+   border-bottom: 2px solid red;
 }
 
-ul.main-menu li:hover > a i {
+.main-menu__item:hover > .main-menu__link i,
+.sub-menu__item:hover > .sub-menu__link i {
    transform: rotate(-180deg);
 }
 
-ul.sub-menu li:hover > ul.sub-menu {
+.sub-menu__item:hover > .sub-menu--primary {
    visibility: visible;
    opacity: 1;
    transform: translateX(0);
 }
+
+.nav__img,
+.nav__title,
+.main-menu__item,
+.search,
+.avatar,
+.cart {
+   animation-name: move;
+   animation-duration: 0.4s;
+   animation-timing-function: linear;
+   animation-fill-mode: forwards;
+   opacity: 0;
+}
+
+.item--animation-1 {
+   animation-delay: 0.4s;
+}
+
+.item--animation-2 {
+   animation-delay: 0.6s;
+}
+
+.item--animation-3 {
+   animation-delay: 0.8s;
+}
+
+.item--animation-4 {
+   animation-delay: 1s;
+}
+
+.item--animation-5 {
+   animation-delay: 1.2s;
+}
+
 
 .nav-right {
    display: flex;
@@ -289,19 +299,6 @@ ul.sub-menu li:hover > ul.sub-menu {
    border-radius: 50%;
    background-color: white;
    z-index: 11;
-}
-
-.logo img,
-.logo-span,
-ul.main-menu li,
-.search,
-.avatar,
-.cart {
-   animation-name: move;
-   animation-duration: 0.4s;
-   animation-timing-function: linear;
-   animation-fill-mode: forwards;
-   opacity: 0;
 }
 
 @keyframes move {
