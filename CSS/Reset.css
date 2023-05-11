@@ -87,7 +87,7 @@ video {
    vertical-align: baseline;
    box-sizing: border-box;
 }
-/* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -129,3 +129,5 @@ a {
 html {
    font-size: 62.5%;
 }
+
+
