@@ -177,20 +177,20 @@ body {
    animation-delay: 1.2s;
 }
 
-.nav-right {
+.nav__right {
    display: flex;
    align-items: center;
 }
 
-.search {
+.right__search {
    position: relative;
    margin-right: 20px;
    animation-delay: 1.4s;
 }
 
-.search > i,
-.avatar i,
-.cart i {
+.right__search > i,
+.right__user i,
+.right__cart i {
    position: relative;
    display: flex;
    align-items: center;
@@ -205,7 +205,7 @@ body {
    z-index: 10;
 }
 
-.search-form {
+.search__form {
    position: absolute;
    right: 0;
    visibility: hidden;
@@ -220,7 +220,7 @@ body {
    align-items: center;
 }
 
-.search-input {
+.form__input {
    outline: none;
    padding: 5px 5px 5px 30px;
    font-size: 16px;
@@ -229,11 +229,11 @@ body {
    right: 0;
 }
 
-.search-input:focus {
+.form__input:focus {
    border-color: #3498db;
 }
 
-.search-btn {
+.form__btn {
    position: absolute;
    left: 5px;
    background: none;
@@ -241,19 +241,19 @@ body {
    cursor: pointer;
 }
 
-.search-btn i {
+.form__btn i {
    font-size: 18px;
    color: black;
 }
 
-.search:hover > .search-form {
+.right__search:hover > .search__form {
    visibility: visible;
    opacity: 1;
    transform: translateY(0);
 }
 
-.search::after,
-.avatar::after {
+.right__search::after,
+.right__user::after {
    content: "";
    position: absolute;
    display: block;
@@ -263,13 +263,13 @@ body {
    right: -10px;
 }
 
-.avatar {
+.right__user {
    position: relative;
    margin-right: 20px;
    animation-delay: 1.6s;
 }
 
-.avatar-log {
+.user__choose {
    position: absolute;
    visibility: hidden;
    opacity: 0;
@@ -280,11 +280,11 @@ body {
    text-align: center;
 }
 
-.user-log {
+.user__log {
    background-color: black;
 }
 
-.user-log a {
+.user__log a {
    display: block;
    text-decoration: none;
    color: white;
@@ -292,24 +292,24 @@ body {
    font-size: 16px;
 }
 
-.avatar:hover > .avatar-log {
+.right__user:hover > .user__choose {
    visibility: visible;
    opacity: 1;
    transform: translateY(0);
 }
 
-.user-log a:hover {
+.user__log a:hover {
    background-color: white;
    color: black;
 }
 
-.cart {
+.right__cart {
    position: relative;
    margin-right: 10px;
    animation-delay: 1.8s;
 }
 
-.cart-number {
+.cart__number {
    position: absolute;
    display: flex;
    align-items: center;
