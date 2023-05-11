@@ -5,140 +5,123 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
+      <link rel="stylesheet" href="../CSS/Reset.css" />
       <script src="https://kit.fontawesome.com/cdb547b0ce.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="../CSS/Header.css" />
    </head>
    <body>
       <header id="header">
-         <nav id="navbar">
-            <a class="logo" href="./Home.html">
-               <img src="../Image/Logo.jpg" alt="Logo" />
-               <span class="logo-span">QUỐC KIỆT SHOP</span>
+         <nav class="nav">
+            <!-- Loggo -->
+            <a class="nav__link" href="./Home.html">
+               <img src="../Image/Logo.jpg" alt="Logo" class="nav__img" />
+               <span class="nav__title">QUỐC KIỆT SHOP</span>
             </a>
-
-            <ul class="main-menu">
-               <li>
-                  <a href="">Menu 1 <i class="fa-solid fa-caret-down"></i></a>
-                  <ul class="sub-menu">
-                     <li>
-                        <a href="">Menu 1.1</a>
-                        <ul class="sub-menu">
-                           <li><a href="">Menu 1.1.1</a></li>
-                           <li>
-                              <a href="">Menu 1.1.2</a>
-                              <ul class="sub-menu">
-                                 <li><a href="">Menu 1.1.1</a></li>
-                                 <li><a href="">Menu 1.1.2</a></li>
-                                 <li><a href="">Menu 1.1.3</a></li>
-                                 <li><a href="">Menu 1.1.4</a></li>
-                                 <li><a href="">Menu 1.1.5</a></li>
-                              </ul>
-                           </li>
-                           <li><a href="">Menu 1.1.3</a></li>
-                           <li><a href="">Menu 1.1.4</a></li>
-                           <li><a href="">Menu 1.1.5</a></li>
+            <!-- Menu parent -->
+            <ul class="nav__main-menu">
+               <!-- Sản Phẩm -->
+               <li class="main-menu__item item--animation item--animation-1">
+                  <a class="main-menu__link" href="">SẢN PHẨM <i class="fa-solid fa-caret-down"></i></a>
+                  <!-- Menu child -->
+                  <ul class="nav__sub-menu">
+                     <!-- Đầm -->
+                     <li class="sub-menu__item">
+                        <a class="sub-menu__link" href="">Đầm <i class="fa-solid fa-caret-right"></i></a>
+                        <ul class="nav__sub-menu sub-menu--primary">
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Đầm Suông</a></li>
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Đầm Dáng A</a></li>
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Đầm Ôm</a></li>
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Đầm Maxi</a></li>
                         </ul>
                      </li>
-                     <li>
-                        <a href="">Menu 1.2</a>
-                        <ul class="sub-menu">
-                           <li><a href="">Menu 1.1.1</a></li>
-                           <li><a href="">Menu 1.1.2</a></li>
-                           <li><a href="">Menu 1.1.3</a></li>
-                           <li><a href="">Menu 1.1.4</a></li>
-                           <li><a href="">Menu 1.1.5</a></li>
+                     <!-- Áo Sơ Mi -->
+                     <li class="sub-menu__item">
+                        <a class="sub-menu__link" href="">Áo Sơ Mi <i class="fa-solid fa-caret-right"></i></a>
+                        <ul class="nav__sub-menu sub-menu--primary">
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Dài Tay</a></li>
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Ngắn Tay</a></li>
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Tay Lỡ</a></li>
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Áo Kiểu</a></li>
                         </ul>
                      </li>
-                     <li>
-                        <a href="">Menu 1.3</a>
-                        <ul class="sub-menu">
-                           <li><a href="">Menu 1.1.1</a></li>
-                           <li><a href="">Menu 1.1.2</a></li>
-                           <li><a href="">Menu 1.1.3</a></li>
-                           <li><a href="">Menu 1.1.4</a></li>
-                           <li><a href="">Menu 1.1.5</a></li>
+                     <!-- Áo Phông -->
+                     <li class="sub-menu__item"><a class="sub-menu__link" href="">Áo Phông</a></li>
+                     <!-- Áo Dài -->
+                     <li class="sub-menu__item"><a class="sub-menu__link" href="">Áo Dài</a></li>
+                     <!-- Áo Len -->
+                     <li class="sub-menu__item"><a class="sub-menu__link" href="">Áo Len</a></li>
+                     <!-- Áo Khoác -->
+                     <li class="sub-menu__item">
+                        <a class="sub-menu__link" href="">Áo Khoác <i class="fa-solid fa-caret-right"></i></a>
+                        <ul class="nav__sub-menu sub-menu--primary">
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Áo Phao</a></li>
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Áo Vest</a></li>
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Áo Măng Tô</a></li>
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Áo Khoác Kiểu</a></li>
                         </ul>
                      </li>
-                     <li>
-                        <a href="">Menu 1.4</a>
-                        <ul class="sub-menu">
-                           <li><a href="">Menu 1.1.1</a></li>
-                           <li><a href="">Menu 1.1.2</a></li>
-                           <li><a href="">Menu 1.1.3</a></li>
-                           <li><a href="">Menu 1.1.4</a></li>
-                           <li><a href="">Menu 1.1.5</a></li>
+                     <!-- Quần -->
+                     <li class="sub-menu__item">
+                        <a class="sub-menu__link" href="">Quần <i class="fa-solid fa-caret-right"></i></a>
+                        <ul class="nav__sub-menu sub-menu--primary">
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Quần Dài</a></li>
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Quần Short</a></li>
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Quần Lửng</a></li>
                         </ul>
                      </li>
-                     <li>
-                        <a href="">Menu 1.5</a>
-                        <ul class="sub-menu">
-                           <li><a href="">Menu 1.1.1</a></li>
-                           <li><a href="">Menu 1.1.2</a></li>
-                           <li><a href="">Menu 1.1.3</a></li>
-                           <li><a href="">Menu 1.1.4</a></li>
-                           <li><a href="">Menu 1.1.5</a></li>
+                     <!-- Chân Váy -->
+                     <li class="sub-menu__item">
+                        <a class="sub-menu__link" href="">Chân Váy <i class="fa-solid fa-caret-right"></i></a>
+                        <ul class="nav__sub-menu sub-menu--primary">
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Chân Váy Xếp Li</a></li>
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Chân Váy Bút Chì</a></li>
+                           <li class="sub-menu__item"><a class="sub-menu__link" href="">Chân Váy Chữ A</a></li>
                         </ul>
                      </li>
+                     <!-- Sét Bộ -->
+                     <li class="sub-menu__item"><a class="sub-menu__link" href="">Set Bộ</a></li>
                   </ul>
                </li>
-               <li>
-                  <a href="">Menu 2 <i class="fa-solid fa-caret-down"></i></a>
-                  <ul class="sub-menu">
-                     <li><a href="">Menu 2.1</a></li>
-                     <li><a href="">Menu 2.2</a></li>
-                     <li><a href="">Menu 2.3</a></li>
-                     <li><a href="">Menu 2.4</a></li>
-                     <li><a href="">Menu 2.5</a></li>
+               <!-- Sản Phẩm Mới -->
+               <li class="main-menu__item item--animation item--animation-2"><a class="main-menu__link" href="">SẢN PHẨM MỚI</a></li>
+               <!-- Bộ Sưu Tập -->
+               <li class="main-menu__item item--animation item--animation-3">
+                  <a class="main-menu__link" href="">BỘ SƯU TẬP <i class="fa-solid fa-caret-down"></i></a>
+                  <ul class="nav__sub-menu">
+                     <li class="sub-menu__item"><a class="sub-menu__link" href="">SUMMER DREAM</a></li>
+                     <li class="sub-menu__item"><a class="sub-menu__link" href="">THE MUSE GARDEN</a></li>
+                     <li class="sub-menu__item"><a class="sub-menu__link" href="">LOVE STORY</a></li>
                   </ul>
                </li>
-               <li>
-                  <a href="">Menu 3 <i class="fa-solid fa-caret-down"></i></a>
-                  <ul class="sub-menu">
-                     <li><a href="">Menu 3.1</a></li>
-                     <li><a href="">Menu 3.2</a></li>
-                     <li><a href="">Menu 3.3</a></li>
-                     <li><a href="">Menu 3.4</a></li>
-                     <li><a href="">Menu 3.5</a></li>
-                  </ul>
-               </li>
-               <li>
-                  <a href="">Menu 4 <i class="fa-solid fa-caret-down"></i></a>
-                  <ul class="sub-menu">
-                     <li><a href="">Menu 4.1</a></li>
-                     <li><a href="">Menu 4.2</a></li>
-                     <li><a href="">Menu 4.3</a></li>
-                     <li><a href="">Menu 4.4</a></li>
-                     <li><a href="">Menu 4.5</a></li>
-                  </ul>
-               </li>
-               <li>
-                  <a href="">Menu 5 <i class="fa-solid fa-caret-down"></i></a>
-                  <ul class="sub-menu">
-                     <li><a href="">Menu 5.1</a></li>
-                     <li><a href="">Menu 5.2</a></li>
-                     <li><a href="">Menu 5.3</a></li>
-                     <li><a href="">Menu 5.4</a></li>
-                     <li><a href="">Menu 5.5</a></li>
+               <!-- Online -->
+               <li class="main-menu__item item--animation item--animation-4"><a class="main-menu__link" href="">QK ONLINE</a></li>
+               <!-- Sale -->
+               <li class="main-menu__item item--animation item--animation-5">
+                  <a class="main-menu__link" href="">SALE <i class="fa-solid fa-caret-down"></i></a>
+                  <ul class="nav__sub-menu">
+                     <li class="sub-menu__item"><a class="sub-menu__link" href="">Sale Up To 50%</a></li>
+                     <li class="sub-menu__item"><a class="sub-menu__link" href="">Chỉ từ 149k</a></li>
                   </ul>
                </li>
             </ul>
-            <div class="nav-right">
-               <div class="search">
+
+            <div class="nav__right">
+               <div class="right__search">
                   <i class="fa-solid fa-magnifying-glass"></i>
-                  <div class="search-form">
-                     <form action="" class="form">
-                        <input type="text" class="search-input" required />
-                        <button class="search-btn">
+                  <div class="search__form ">
+                     <form action="" class="form form--search">
+                        <input type="search" class="form__input input--search" required />
+                        <button type="submit" class="form__btn">
                            <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                      </form>
                   </div>
                </div>
 
-               <div class="avatar">
+               <div class="right__user">
                   <i class="fa-solid fa-user"></i>
-                  <div class="avatar-log">
-                     <div class="user-log">
+                  <div class="user__choose">
+                     <div class="log">
                         <a href="">Đăng Nhập</a>
                         <a href="">Đăng Kí</a>
                      </div>
@@ -154,5 +137,6 @@
             </div>
          </nav>
       </header>
+      <p>a</p>
    </body>
 </html>
