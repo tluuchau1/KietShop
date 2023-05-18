@@ -4,58 +4,372 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/Home.css">
-    <link rel="stylesheet" href="/CSS/Grid.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+    <link rel="stylesheet" href="../CSS/grid.css">
+    <link rel="stylesheet" href="/CSS/home.css">
     <script src="https://kit.fontawesome.com/cdb547b0ce.js" crossorigin="anonymous"></script>
     <title>Document</title>
-    <script src="../JS/Slider.js" defer></script>
+    
 </head>
 <body>
-    
-    <div class="wrapper">
-    
-        <div class="carousel">
-            <img src="../IMAGE/slider1.jpg" alt="slider" draggable="false">
-            <img src="../IMAGE/slider2.jpg" alt="slider" draggable="false">
-            <img src="../IMAGE/slider3.jpg" alt="slider" draggable="false">
-            <img src="../IMAGE/slider4.jpg" alt="slider" draggable="false">
-            <img src="../IMAGE/slider5.jpg" alt="slider" draggable="false">
-        </div>
-
-    <div class="btn">  
-    <i id="left" class="fa-solid fa-angle-left next"></i>
-    <i id="right" class="fa-solid fa-angle-right prev"></i>
-    </div>  
-
-    <div class="dotsContainer">
-        <div class="dot active" attr="0" onclick="switchImage(this)"></div>
-        <div class="dot" attr="1" onclick="switchImage(this)"></div>
-        <div class="dot" attr="2" onclick="switchImage(this)"></div>
-        <div class="dot" attr="3" onclick="switchImage(this)"></div>
-        <div class="dot" attr="4" onclick="switchImage(this)"></div>
-    </div>
-    </div>
-
-    <div class="home-banner row 1-12">
-        <div class="ban col l-6">
-        <a href="##">
-            <div class="image"><img src="../IMAGE/banner1.jpg" alt="ban1"></div>
-            <div class="title-btn">
-                <div class="btn-shopnow">MIX & MATCH</div>
-                <div class="title">Shop Now</div>
+    <div class="container">
+        <div class="image-slider">
+            <div class="image-item">
+                <div class="image">
+                    <img src="../IMAGE/slider1.jpg" alt="slider">
+                </div>
             </div>
-        </a>
-        </div>
-        <div class="ban col l-6">
-            <a href="##">
-            <div class="image"><img src="../IMAGE/banner2.jpg" alt="ban1"></div>
-            <div class="title-btn">
-                <div class="btn-shopnow">MIX & MATCH</div>
-                <div class="title">Shop Now</div>
+            <div class="image-item">
+                <div class="image">
+                    <img src="../IMAGE/slider2.jpg" alt="slider">
+                </div>
             </div>
-            </a>
+            <div class="image-item">
+                <div class="image">
+                    <img src="../IMAGE/slider3.jpg" alt="slider">
+                </div>
+            </div>
+            <div class="image-item">
+                <div class="image">
+                    <img src="../IMAGE/slider4.jpg" alt="slider">
+                </div>
+            </div>
+            <div class="image-item">
+                <div class="image">
+                    <img src="../IMAGE/slider5.jpg" alt="slider">
+                </div>
+            </div>
+        </div>
+    <div class="container-banner">
+        <div class="banner">
+            <div class="banner-image">
+                <img src="https://theme.hstatic.net/200000182297/1000887316/14/home_new_banner_1.jpg?v=566" alt="banner">
+            </div>
+            <div class="banner-title">
+                <h2>MIX & MATCH</h2>
+                <p>SHOP NOW</p>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="banner-image">
+                <img src="https://theme.hstatic.net/200000182297/1000887316/14/home_new_banner_2.jpg?v=566" alt="banner">
+            </div>
+            <div class="banner-title">
+                <h2>MIX & MATCH</h2>
+                <p>SHOP NOW</p>
+            </div>
         </div>
     </div>
-
+    <div class="container-content">
+        <div class="header-content ">
+            <h1>SẢN PHẨM MỚI</h1>
+        </div>
+    <div class="container-carousel grid wide">
+        <div class="carousels l-3">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/3_3af60a9e3c974c74894360266b4c124d_1024x1024.jpg" alt="slider1">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/12_47c325f2dad740fa9c6a5d11c1cb9f5b_1024x1024.jpg" alt="slider2">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/21_ddd39395c3134715ba0790d4ce3f0700_1024x1024.jpg" alt="slider3">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3 ">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/22_dfae1ae9b0ff4cc5b01ea2e1b74397c7_1024x1024.jpg" alt="slider4">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3 ">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/3_6c95210f5df14943982d87f42b32699c_1024x1024.jpg" alt="slider5">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3 ">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/13_8407802e727c4c1b8cc2bf369231dabe_1024x1024.jpg" alt="slider6">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3 ">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/2_93b7533c551a41bb84c29f53565271c5_1024x1024.jpg" alt="slider7">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3 ">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/19_1a7f48efa9334740b7969673890dfb45_1024x1024.jpg" alt="slider8">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3 ">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/18_6b8399c75fce42a787837ed787e5a268_1024x1024.jpg" alt="slider9">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3 ">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/23_311149444b0a49fc8abe4eca8140cab5_1024x1024.jpg" alt="slider10">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3 ">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/22_9298781326064ff0b5bbe1bd69f99dee_1024x1024.jpg" alt="slider11">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="header-content ">
+            <h1>ÁO PHÔNG CAO CẤP</h1>
+        </div>
+    <div class="container-carousel grid wide">
+        <div class="carousels l-3">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/3_3af60a9e3c974c74894360266b4c124d_1024x1024.jpg" alt="slider1">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/12_47c325f2dad740fa9c6a5d11c1cb9f5b_1024x1024.jpg" alt="slider2">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/21_ddd39395c3134715ba0790d4ce3f0700_1024x1024.jpg" alt="slider3">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3 ">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/22_dfae1ae9b0ff4cc5b01ea2e1b74397c7_1024x1024.jpg" alt="slider4">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3 ">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/3_6c95210f5df14943982d87f42b32699c_1024x1024.jpg" alt="slider5">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3 ">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/13_8407802e727c4c1b8cc2bf369231dabe_1024x1024.jpg" alt="slider6">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3 ">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/2_93b7533c551a41bb84c29f53565271c5_1024x1024.jpg" alt="slider7">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3 ">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/19_1a7f48efa9334740b7969673890dfb45_1024x1024.jpg" alt="slider8">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3 ">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/18_6b8399c75fce42a787837ed787e5a268_1024x1024.jpg" alt="slider9">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3 ">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/23_311149444b0a49fc8abe4eca8140cab5_1024x1024.jpg" alt="slider10">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousels l-3 ">
+            <div class="slider">
+                <img src="https://product.hstatic.net/200000182297/product/22_9298781326064ff0b5bbe1bd69f99dee_1024x1024.jpg" alt="slider11">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="contain-banner-2">
+        <img  class="img-banner-2" src="https://theme.hstatic.net/200000182297/1000887316/14/hb_image1.jpg?v=570" alt="banner1">  
+    </div>
+    <div class="header-content">
+        <h1>QK's Blog</h1>
+        <p>ĐÓN ĐẦU XU HƯỚNG, ĐỊNH HÌNH PHONG CÁCH</p>
+    </div>
+    <div class="contai-carousel grid wide">
+        <div class="caro l-4 ">
+            <div class="slid">
+                <img src="https://file.hstatic.net/200000182297/article/342544079_185591394364106_3474506149512152400_n__1__7b5ebc8e82e84130a3effdf0c7599fa1_large.jpg" alt="slider6">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="caro l-4 ">
+            <div class="slid">
+                <img src="https://file.hstatic.net/200000182297/article/327890757_8735259056545354_6482098786089923519_n_ee711d5e3b9f4541b8c10fed967c16ca_large.jpg" alt="slider6">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="caro l-4 ">
+            <div class="slid">
+                <img src="https://file.hstatic.net/200000182297/article/315854475_2623148267823058_3203710229884569157_n_3baa02b3ee4348339faec98be869be0d_large.jpg" alt="slider6">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="caro l-4 ">
+            <div class="slid">
+                <img src="https://file.hstatic.net/200000182297/article/285634743_2457803104357576_4449744498852558662_n_a415bf75ede64fc997cbc67f348f8153_large.jpg" alt="slider6">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="caro l-4 ">
+            <div class="slid">
+                <img src="https://file.hstatic.net/200000182297/article/web_6fb6ad7b835f456aba636f2a29c0eaf8_large.jpg" alt="slider6">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="caro l-4 ">
+            <div class="slid">
+                <img src="https://file.hstatic.net/200000182297/article/278773775_2415192895285264_2361528904623727306_n_e5175a3f6a4b4781b74421a84641fa90_large.jpg" alt="slider6">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="caro l-4 ">
+            <div class="slid">
+                <img src="https://file.hstatic.net/200000182297/article/277792773_2405871579550729_300161647078595887_n_94aacacb7a204191a62d1baf91d110c4_large.jpg" alt="slider6">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+          <div class="caro l-4 ">
+            <div class="slid">
+                <img src="https://file.hstatic.net/200000182297/article/270790785_2325991570872064_3732375015176452639_n_e0a8a768f6494c68b29ffde935fec684_large.jpg" alt="slider6">
+                <div class="content-titles">
+                    <h1 class="header-title">SƠ MI CHẤM BI SM00362</h1>
+                    <p class="price-tilte">599,000₫</p>
+                </div>
+            </div>
+          </div>
+    </div>
+</div>
+    
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script 
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="../JS/slider.js"></script>
 </body>
 </html>
