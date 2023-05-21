@@ -1,0 +1,44 @@
+.footer {
+   display: grid;
+   grid-template-columns: 2fr 1fr 1fr 1fr;
+   padding: 2rem 3rem;
+   color: white;
+   background-color: black;
+   gap: 3rem;
+   line-height: 1.5;
+   font-size: 1.6rem;
+}
+
+.introduction__list--title {
+   font-weight: 600;
+   font-size: 1.8rem;
+}
+
+.introduction__link,
+.instruction__link,
+.pay__link {
+   color: white;
+}
+
+.introduction__link:hover,
+.instruction__link:hover,
+.pay__link:hover {
+   color: blueviolet;
+}
+
+@media screen and (max-width: 1023.98px) {
+   .footer {
+      grid-template-columns: 2fr 1fr;
+   }
+}
+@media screen and (max-width: 767.98px) {
+   .footer {
+      grid-template-columns: 1fr;
+      font-size: 1.5rem;
+      padding: 1rem;
+   }
+
+   .introduction__list--title {
+      font-size: 1.6rem;
+   }
+}

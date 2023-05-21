@@ -1,15 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather&display=swap");
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 * {
    box-sizing: border-box;
    margin: 0;
    padding: 0;
 }
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
 body {
    max-width: 2560px;
 }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+.nav {
+   font-family: "Merriweather", serif;
+   position: sticky;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 8rem;
+   z-index: 999;
+   background-color: black;
+   width: 100vw;
+}
+
+.nav__link {
+   display: flex;
+   align-items: center;
+}
+
+.nav__img {
+   max-width: 40px;
+}
+
+.nav__title {
+   font-size: 1.6rem;
+   background: linear-gradient(to right, red, orange, #2980b9, #3498db, #8e44ad, #e74c3c, #e84393);
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+   padding: 1rem;
+   animation-delay: 0.2s;
+}
+
+.nav__main-menu {
+   display: flex;
+   align-items: center;
+}
+
+.main-menu__item {
+   position: relative;
+}
+
+.main-menu__link {
+=======
+>>>>>>> Stashed changes
 #navbar {
    font-family: "Merriweather", serif;
    position: sticky;
@@ -75,10 +130,47 @@ ul.main-menu li:nth-child(5) {
 }
 
 ul.main-menu li a {
+<<<<<<< Updated upstream
+=======
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    position: relative;
    display: flex;
    align-items: center;
    gap: 5px;
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+   color: #fff;
+   padding: 1rem 1.5rem;
+   z-index: 10;
+   font-size: 2rem;
+}
+
+.main-menu__link::after {
+   content: "";
+   position: absolute;
+   width: 0;
+   height: 10%;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%) scaleX(0);
+   transform-origin: center left;
+   background-color: red;
+   z-index: -1;
+   transition: 0.3s;
+}
+
+.main-menu__link i,
+.sub-menu__link i {
+   transition: 0.5s ease-in-out;
+}
+
+.nav__sub-menu {
+   position: absolute;
+   background-color: black;
+=======
+>>>>>>> Stashed changes
    text-decoration: none;
    color: #fff;
    padding: 15px;
@@ -94,6 +186,10 @@ ul.sub-menu {
    position: absolute;
    background-color: black;
    list-style: none;
+<<<<<<< Updated upstream
+=======
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    width: max-content;
    z-index: 9;
    transform: translateY(-50%);
@@ -102,6 +198,28 @@ ul.sub-menu {
    opacity: 0;
 }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+.sub-menu__item {
+   position: relative;
+   border-bottom: 1px solid red;
+}
+
+.sub-menu__link {
+   position: relative;
+   display: flex;
+   padding: 1rem 2rem;
+   font-size: 1.6rem;
+   justify-content: space-between;
+   gap: 10px;
+   color: white;
+   z-index: 9;
+}
+
+.sub-menu--primary {
+=======
+>>>>>>> Stashed changes
 ul.sub-menu li {
    position: relative;
    border-bottom: 2px solid red;
@@ -114,18 +232,64 @@ ul.sub-menu li a {
 }
 
 ul.sub-menu ul.sub-menu {
+<<<<<<< Updated upstream
+=======
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    top: 0;
    left: 100%;
    position: absolute;
    transform: translateX(-50%);
+<<<<<<< Updated upstream
 }
 
 ul.main-menu li:hover > ul.sub-menu {
+=======
+<<<<<<< HEAD
+   z-index: 8;
+}
+
+.main-menu__item:hover > .nav__sub-menu {
+=======
+}
+
+ul.main-menu li:hover > ul.sub-menu {
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    visibility: visible;
    opacity: 1;
    transform: translateY(0);
 }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+.main-menu__item:hover > .main-menu__link::after {
+   width: 100%;
+   transform: translateX(-50%) scaleX(1);
+   transform-origin: center right;
+}
+
+/* .main-menu__link:hover,
+.sub-menu__link:hover {
+   background-color: white;
+   color: black;
+} */
+
+.main-menu__link::after:hover {
+   width: 100%;
+   transform: translateX(-50%) scaleX(1);
+   transform-origin: center right;
+}
+
+.main-menu__item:hover > .main-menu__link i,
+.sub-menu__item:hover > .sub-menu__link i {
+   transform: rotate(-180deg);
+}
+
+.sub-menu__item:hover > .sub-menu--primary {
+=======
+>>>>>>> Stashed changes
 ul.main-menu li a:hover {
    background-color: white;
    color: black;
@@ -136,25 +300,90 @@ ul.main-menu li:hover > a i {
 }
 
 ul.sub-menu li:hover > ul.sub-menu {
+<<<<<<< Updated upstream
+=======
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    visibility: visible;
    opacity: 1;
    transform: translateX(0);
 }
 
+<<<<<<< Updated upstream
 .nav-right {
+=======
+<<<<<<< HEAD
+.nav__img,
+.nav__title,
+.main-menu__item,
+.search,
+.avatar,
+.cart {
+   animation-name: move;
+   animation-duration: 0.4s;
+   animation-timing-function: linear;
+   animation-fill-mode: forwards;
+   opacity: 0;
+}
+
+.item--animation-1 {
+   animation-delay: 0.4s;
+}
+
+.item--animation-2 {
+   animation-delay: 0.6s;
+}
+
+.item--animation-3 {
+   animation-delay: 0.8s;
+}
+
+.item--animation-4 {
+   animation-delay: 1s;
+}
+
+.item--animation-5 {
+   animation-delay: 1.2s;
+}
+
+.nav__right {
+=======
+.nav-right {
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    display: flex;
    align-items: center;
 }
 
+<<<<<<< Updated upstream
 .search {
+=======
+<<<<<<< HEAD
+.right__search {
+=======
+.search {
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    position: relative;
    margin-right: 20px;
    animation-delay: 1.4s;
 }
 
+<<<<<<< Updated upstream
 .search > i,
 .avatar i,
 .cart i {
+=======
+<<<<<<< HEAD
+.right__search > i,
+.right__user i,
+.right__cart i {
+=======
+.search > i,
+.avatar i,
+.cart i {
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    position: relative;
    display: flex;
    align-items: center;
@@ -169,7 +398,15 @@ ul.sub-menu li:hover > ul.sub-menu {
    z-index: 10;
 }
 
+<<<<<<< Updated upstream
 .search-form {
+=======
+<<<<<<< HEAD
+.search__form {
+=======
+.search-form {
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    position: absolute;
    right: 0;
    visibility: hidden;
@@ -184,7 +421,15 @@ ul.sub-menu li:hover > ul.sub-menu {
    align-items: center;
 }
 
+<<<<<<< Updated upstream
 .search-input {
+=======
+<<<<<<< HEAD
+.form__input {
+=======
+.search-input {
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    outline: none;
    padding: 5px 5px 5px 30px;
    font-size: 16px;
@@ -193,11 +438,25 @@ ul.sub-menu li:hover > ul.sub-menu {
    right: 0;
 }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+.form__input:focus {
+   border-color: #3498db;
+}
+
+.form__btn {
+=======
+>>>>>>> Stashed changes
 .search-input:focus {
    border-color: #3498db;
 }
 
 .search-btn {
+<<<<<<< Updated upstream
+=======
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    position: absolute;
    left: 5px;
    background: none;
@@ -205,19 +464,45 @@ ul.sub-menu li:hover > ul.sub-menu {
    cursor: pointer;
 }
 
+<<<<<<< Updated upstream
 .search-btn i {
+=======
+<<<<<<< HEAD
+.form__btn i {
+=======
+.search-btn i {
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    font-size: 18px;
    color: black;
 }
 
+<<<<<<< Updated upstream
 .search:hover > .search-form {
+=======
+<<<<<<< HEAD
+.right__search:hover > .search__form {
+=======
+.search:hover > .search-form {
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    visibility: visible;
    opacity: 1;
    transform: translateY(0);
 }
 
+<<<<<<< Updated upstream
 .search::after,
 .avatar::after {
+=======
+<<<<<<< HEAD
+.right__search::after,
+.right__user::after {
+=======
+.search::after,
+.avatar::after {
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    content: "";
    position: absolute;
    display: block;
@@ -227,13 +512,29 @@ ul.sub-menu li:hover > ul.sub-menu {
    right: -10px;
 }
 
+<<<<<<< Updated upstream
 .avatar {
+=======
+<<<<<<< HEAD
+.right__user {
+=======
+.avatar {
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    position: relative;
    margin-right: 20px;
    animation-delay: 1.6s;
 }
 
+<<<<<<< Updated upstream
 .avatar-log {
+=======
+<<<<<<< HEAD
+.user__choose {
+=======
+.avatar-log {
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    position: absolute;
    visibility: hidden;
    opacity: 0;
@@ -244,11 +545,25 @@ ul.sub-menu li:hover > ul.sub-menu {
    text-align: center;
 }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+.user__log {
+   background-color: black;
+}
+
+.user__log a {
+=======
+>>>>>>> Stashed changes
 .user-log {
    background-color: black;
 }
 
 .user-log a {
+<<<<<<< Updated upstream
+=======
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    display: block;
    text-decoration: none;
    color: white;
@@ -256,24 +571,56 @@ ul.sub-menu li:hover > ul.sub-menu {
    font-size: 16px;
 }
 
+<<<<<<< Updated upstream
 .avatar:hover > .avatar-log {
+=======
+<<<<<<< HEAD
+.right__user:hover > .user__choose {
+=======
+.avatar:hover > .avatar-log {
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    visibility: visible;
    opacity: 1;
    transform: translateY(0);
 }
 
+<<<<<<< Updated upstream
 .user-log a:hover {
+=======
+<<<<<<< HEAD
+.user__log a:hover {
+=======
+.user-log a:hover {
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    background-color: white;
    color: black;
 }
 
+<<<<<<< Updated upstream
 .cart {
+=======
+<<<<<<< HEAD
+.right__cart {
+=======
+.cart {
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    position: relative;
    margin-right: 10px;
    animation-delay: 1.8s;
 }
 
+<<<<<<< Updated upstream
 .cart-number {
+=======
+<<<<<<< HEAD
+.cart__number {
+=======
+.cart-number {
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
    position: absolute;
    display: flex;
    align-items: center;
@@ -291,6 +638,11 @@ ul.sub-menu li:hover > ul.sub-menu {
    z-index: 11;
 }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 .logo img,
 .logo-span,
 ul.main-menu li,
@@ -304,6 +656,10 @@ ul.main-menu li,
    opacity: 0;
 }
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> e1dea5473ce4f5b3985902ed838923664c369530
+>>>>>>> Stashed changes
 @keyframes move {
    from {
       opacity: 0;
